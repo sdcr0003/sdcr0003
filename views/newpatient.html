@@ -1,0 +1,26 @@
+<html>
+<head>
+        <style> body {background-color: #c2c2c2;}</style>
+        
+</head>
+<body>
+    <h1> New Patient</h1> </br>
+    <h1>
+        <a href="/">Insert New Patient</a>
+        <a href="/newdoctor" class="btn btn-outline-info" type="button">Add Doctor</a>
+        <a href="/listdoctors" class="btn btn-outline-info" type="button">List Doctors</a>
+        <a href="/newpatient" class="btn btn-outline-info" type="button">Add Patient</a>
+        <a href="/listpatients" class="btn btn-outline-info" type="button">List Patients</a>
+        <a href="/updatedoctor" class="btn btn-outline-info" type="button">Update Doctor</a>
+        <a href="/deletepatient" class="btn btn-outline-info" type="button">Delete Patient</a>
+    </h1>
+    <form action="/addnewbook" method="POST">
+        Full Name <input type="text"  name="pfullName" /> </br>
+        Doctor <input type="text"  name="id" /> </br>
+        Age <input type="number"  name="page" /> </br>
+        Date of Visit <input type="date"  name="pvisit" /> </br>
+        Case Description <input type="text"  name="pdescription" /> </br>
+        <input type="submit" value="Submit" /> </br>
+    </form>
+</body>
+</html>

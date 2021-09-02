@@ -1,0 +1,37 @@
+<html>
+<head>
+    <head>
+        <style> body {background-color: #beabed;}</style>
+    </head>
+</head>
+<body>
+    <h1> List Patients</h1> </br>
+    <h1>
+        <a href="/">List Patients</a>
+        <a href="/newdoctor" class="btn btn-outline-info" type="button">Add Doctor</a>
+        <a href="/listdoctors" class="btn btn-outline-info" type="button">List Doctors</a>
+        <a href="/newpatient" class="btn btn-outline-info" type="button">Add Patient</a>
+        <a href="/listpatients" class="btn btn-outline-info" type="button">List Patients</a>
+        <a href="/updatedoctor" class="btn btn-outline-info" type="button">Update Doctor</a>
+        <a href="/deletepatient" class="btn btn-outline-info" type="button">Delete Patient</a>
+    </h1>
+    <table>
+        <tr>
+            <td>Title</td>
+            <td>Author</td>
+            <td>Topic</td>
+            <td>Date of Publication</td>
+            <td>Summary</td>
+        </tr>
+        <% for (let i=0;i<booksDb.length;i++){ %>
+            <tr>
+                <td><%= booksDb[i].title %> </td>
+                <td> <%= booksDb[i].author %> </td>
+                <td><%= booksDb[i].topic %></td>
+                <td><%= booksDb[i].dop %></td>
+                <td><%= booksDb[i].summary %></td>
+            </tr>
+            <%}%>
+    </table>
+</body>
+</html>

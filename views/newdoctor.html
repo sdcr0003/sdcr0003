@@ -1,0 +1,31 @@
+<html>
+<head>
+        <style> body {background-color: #c2c2c2;}</style>
+        
+</head>
+<body>
+    <h1> New Doctor</h1> </br>
+    <h1>
+        <a href="/">Insert New Doctor</a>
+        <a href="/newdoctor" class="btn btn-outline-info" type="button">Add Doctor</a>
+        <a href="/listdoctors" class="btn btn-outline-info" type="button">List Doctors</a>
+        <a href="/newpatient" class="btn btn-outline-info" type="button">Add Patient</a>
+        <a href="/listpatients" class="btn btn-outline-info" type="button">List Patients</a>
+        <a href="/updatedoctor" class="btn btn-outline-info" type="button">Update Doctor</a>
+        <a href="/deletepatient" class="btn btn-outline-info" type="button">Delete Patient</a>
+    </h1>
+    <form action="/addnewdoctor" method="POST">
+        <h2> Full Name</h2> </br>
+        First Name <input type="text"  name="dfirstName" /> </br>
+        Last Name <input type="text"  name="dlastName" /> </br>
+        Date of Birth <input type="date"  name="ddob" /> </br>
+        <h2> Address</h2> </br>
+        State <input type="text"  name="dstate" /> </br>
+        Suburb <input type="text"  name="dsuburb" /> </br>
+        Street <input type="text"  name="dstreet" /> </br>
+        Unit <input type="number"  name="dunit" /> </br>
+        Number of Patients <input type="number"  name="dnumPatients" /> </br>
+        <input type="submit" value="Submit" /> </br>
+    </form>
+</body>
+</html>
